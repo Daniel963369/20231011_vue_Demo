@@ -22,6 +22,16 @@ const router = createRouter({
       path:'/Vfor',
       name:'Vfor',
       component: () => import('../views/Vfor.vue')
+    },
+    {
+      path:'/practice1',
+      name:'practice1',
+      component: () => import('../views/practice1.vue')
+    },
+    {
+      path:'/practice2',
+      name:'practice2',
+      component: () => import('../views/practice2.vue')
     }
   ]
 })
