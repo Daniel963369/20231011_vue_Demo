@@ -9,8 +9,8 @@
 
 <style lang="scss" scoped>
 .area{
-    width:500px;
-    height:500px;
+    width:100px;
+    height:100px;
     border:2px solid black;
     background-color: #49c3a5;
 }

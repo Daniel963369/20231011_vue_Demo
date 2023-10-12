@@ -12,7 +12,11 @@ export default {
             age:18,
 
             selectText:"",
-            
+            lazyText:"",
+            numberText:0,
+            trimText:"",
+            checkboxText:[],
+            radioText:[],
 
             
         }
@@ -43,6 +47,29 @@ method:{
         <option value="4">4</option>
     </select>
     <h4>{{ selectText }}</h4>
+
+    <input type="text" v-model.lazy="lazyText">
+    <p>{{ this.lazyText }}</p>
+    <input type="number" v-model.number="numberText">
+    <p>{{ this.numberText }}</p>
+    <input type="text" v-model.trim="trimText">
+    <p>{{ this.trimText }}</p>
+
+    <label for="">早餐</label>
+    <input type="checkbox" v-model="checkboxText" name="meal" value="breakfast" id="breakfast">
+    <label for="">中餐</label>
+    <input type="checkbox" v-model="checkboxText" name="meal" value="lunch" id="lunch">
+    <label for="">晚餐</label>
+    <input type="checkbox" v-model="checkboxText" name="meal" value="dinner" id="dinner">
+    <p>{{ this.checkboxText }}</p>
+    
+    <label for="">早餐</label>
+    <input type="radio" v-model="radioText" name="food" value="pork">
+    <label for="">午餐</label>
+    <input type="radio" v-model="radioText" name="food" value="chicken">
+    <label for="">晚餐</label>
+    <input type="radio" v-model="radioText" name="food" value="fish">
+    <p>{{ this.radioText }}</p>
     
 </template>
 
