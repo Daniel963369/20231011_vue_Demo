@@ -44,8 +44,6 @@ export default {
         <label>Product name</label>
     </div>
 </div>
-
-    
 </template>
 
 
