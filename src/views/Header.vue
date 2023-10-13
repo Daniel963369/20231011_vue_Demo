@@ -14,10 +14,10 @@
         <RouterLink class="navHome" to="/">Home</RouterLink>
         <RouterLink class="navtextAndVModel" to="/VtextAndVModel">V-text & V-Model</RouterLink>
         <RouterLink class="navVfor" to="/Vfor">V-for</RouterLink>
-        <RouterLink class="practice1" to="/practice1">practice1</RouterLink>
-        <RouterLink class="practice2" to="/practice2">practice2</RouterLink>
-        <RouterLink class="Von" to="/Von">Von</RouterLink>
-        <RouterLink class="practice3" to="/practice3">practice3</RouterLink>
+        <RouterLink class="navPractice1" to="/Practice1">practice1</RouterLink>
+        <RouterLink class="navPractice2" to="/practice2">practice2</RouterLink>
+        <RouterLink class="navVon" to="/Von">V-on</RouterLink>
+        <RouterLink class="navPractice3" to="/practice3">practice3</RouterLink>
         
     </nav>
 </template>
@@ -48,6 +48,27 @@
     }
 
     .navVfor{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navPractice1{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navPractice2{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navVon{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navPractice3{
+        margin-right:1%;
         text-decoration:none;
         color:green;
     }
