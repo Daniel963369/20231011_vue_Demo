@@ -67,7 +67,7 @@ export default {
         label{
             display:flex;
             justify-content: center;
-            margin-top:65%;
+            margin-top:50%;
         }
         
     }

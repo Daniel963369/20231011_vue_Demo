@@ -28,6 +28,8 @@
     font-size:24pt;
     color:white;
     text-align:center;
+
+    
     
 
     .navHome{
