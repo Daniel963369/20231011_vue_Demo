@@ -96,8 +96,4 @@ export default {
     height:10vh;
     background-color:aqua;
 }
-
-
-
-
 </style>
