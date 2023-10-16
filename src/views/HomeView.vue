@@ -4,7 +4,17 @@
     export default {
       data(){
         return{
-
+            personalInformation:{
+              name:"鄭展舜",
+              educationalBackground:"屏東大學教育學系",
+              zodiac:"巨蟹座",
+              blood:"A型"
+            },
+            connectionMethod:{
+              cellphone:"09xx-xxx-xxx",
+              Email:"xxxx@gmail.com",
+              adress:"xx鄉xx里xx村",
+            }
         }
       },
       components: {
@@ -29,19 +39,19 @@
     <div class="introduction">
       <div class="introductionText">
         <h2>自我介紹</h2>
-        <p>姓名:鄭展舜</p>
-        <p>學歷:屏東國立大學教育學系</p>
-        <p>星座:巨蟹座</p>
-        <p>血型:A型</p>
+        <p>姓名:{{personalInformation.name}}</p>
+        <p>學歷:{{ personalInformation.educationalBackground }}</p>
+        <p>星座:{{ personalInformation.zodiac }}</p>
+        <p>血型:{{ personalInformation.blood }}</p>
       </div>
       <div class="introductionImg"></div>
     </div>
     
     <div class="connection">
       <h2>聯絡方式</h2>
-      <p>電話:09xxxxxxxx</p>
-      <p>Email:XXXX@gmail.com</p>
-      <p>地址:XX鄉XX里XX村</p>
+      <p>電話:{{ connectionMethod.cellphone }}</p>
+      <p>Email:{{connectionMethod.Email}}</p>
+      <p>地址:{{ connectionMethod.adress }}</p>
     </div>
     <div class="interest"></div>
 
@@ -77,6 +87,10 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </div> 
+
+  <div class="aboutMe">
+    <p>關於我</p>
   </div>
   
     <RouterView />
@@ -112,14 +126,14 @@
 
     .introduction{
       display:flex;
-      height:25vh;
+      height:35vh;
       border:1px solid black;
 
       .introductionText{
           width:50%;
           height:100%;
           border:1px solid black;
-          font-size:24pt;
+          font-size:20pt;
           text-align:center;
           background-color: beige;
           color:black;
@@ -145,6 +159,8 @@
     }
 
     .skill{
+      width:100vw;
+      height:50vh;
       border:1px solid black;
       font-size:24pt;
       text-align:center;
@@ -156,26 +172,20 @@
 
   .showContent{
     width:100%;
+    margin-top:18%;
 
-    .contentFirst{
+    .aboutMe{
       width:100vw;
-      height:15vh;
+      height:25vh;
       border:1px solid black;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-    .zodiacSign{
-      width:30%;
-      height:15vh;
-      display:flex;
-      
-      
-      .signText{
-        flex-direction: column-reverse;
-        border:1px solid black;
-      }
+      background-color: blueviolet;
 
+      p{
+        font-size:26pt;
+        text-align:center;
+        margin-top:5%;
+        color:white;
+      }
     }
-  }
   }
 </style>

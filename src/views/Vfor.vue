@@ -28,17 +28,36 @@ export default {
 
 <template>
     <h1>v-for</h1>
-    <p v-for="item in arr">{{ item }}</p>
-    <ol v-for="item in arr2">
-        <li>{{ item.name }}</li>
-        <li>{{ item.age }}</li>
-        <li>{{ item.address }}</li>
-    
-    </ol>
+    <div class="vforTest1">
+        <p v-for="item in arr">{{ item }}</p>
+    </div>
+
+    <div class="vforTest2">
+        <ul v-for="item in arr2">
+            <li>{{ item.name }}</li>
+            <li>{{ item.age }}</li>
+            <li>{{ item.address }}</li>
+        </ul>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 h1{
     text-align:center;
 }
+
+.vforTest1{
+    text-align:center;
+}
+
+.vforTest2{
+    text-align:center;
+    
+    ul{
+        li{
+            list-style-type:none
+        }
+    }
+}
+
 </style>

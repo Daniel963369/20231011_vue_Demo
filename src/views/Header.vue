@@ -18,6 +18,8 @@
         <RouterLink class="navPractice2" to="/practice2">practice2</RouterLink>
         <RouterLink class="navVon" to="/Von">V-on</RouterLink>
         <RouterLink class="navPractice3" to="/practice3">practice3</RouterLink>
+        <RouterLink class="navVbind" to="/Vbind">v-bind</RouterLink>
+        <RouterLink class="navPractice4" to="/practice4">practice4</RouterLink>
         
     </nav>
 </template>
@@ -68,6 +70,11 @@
         color:green;
     }
     .navPractice3{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navVbind{
         margin-right:1%;
         text-decoration:none;
         color:green;
