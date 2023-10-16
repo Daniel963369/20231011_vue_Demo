@@ -68,7 +68,7 @@ export default {
         <div class="fifth">
             <div class="fifthImg">
                 <div class="fifthSquare"></div>
-                <img src="../images/甜點圖片/8.png" alt="">
+                <img src="../../public/甜點圖片/8.png" alt="">
             </div>
             <div class="fifthText">
                 <h1>New Arrival</h1>
@@ -105,7 +105,7 @@ export default {
         .headerRight {
             width: 20%;
             height: 60%;
-            background-image: url(../images/甜點圖片/10.png);
+            background-image: url(../../public/甜點圖片/10.png);
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -132,7 +132,7 @@ export default {
             width: 70%;
             height: 100%;
             margin-right: 5%;
-            background-image: url(../images/甜點圖片/1.png);
+            background-image: url(../../public/甜點圖片/1.png);
             background-size: contain;
             background-repeat: no-repeat;
 
@@ -163,7 +163,7 @@ export default {
             .thirdImg1 {
                 width: 25%;
                 height: 100%;
-                background-image: url(../images/甜點圖片/2.png);
+                background-image: url(../../public/甜點圖片/2.png);
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -171,7 +171,7 @@ export default {
             .thirdImg2 {
                 width: 25%;
                 height: 100%;
-                background-image: url(../images/甜點圖片/3.png);
+                background-image: url(../../public/甜點圖片/3.png);
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -179,7 +179,7 @@ export default {
             .thirdImg3 {
                 width: 25%;
                 height: 100%;
-                background-image: url(../images/甜點圖片/4.png);
+                background-image: url(../../public/甜點圖片/4.png);
                 background-size: contain;
                 background-repeat: no-repeat;
             }
