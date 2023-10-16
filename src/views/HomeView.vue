@@ -143,7 +143,7 @@
           width:50%;
           height:100%;
           border:1px solid black;
-          background-image:url(../images/Heaerphoto.png);
+          background-image:url(../Picture/Heaerphoto.png);
           background-size: contain;
           background-repeat:no-repeat;
           background-color: beige;
