@@ -58,11 +58,12 @@ const router = createRouter({
       name:'VifAndVshow',
       component: () => import('../views/VifAndVshow.vue')
     },
+
     {
       path:'/practice5',
       name:'practice5',
       component: () => import('../views/practice5.vue'),
-      branch:[
+      children: [
       {
         path:"branch1",
         component: () => import('../components/branch1.vue')

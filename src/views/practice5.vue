@@ -1,5 +1,6 @@
 <script>
 import { RouterLink , RouterView } from 'vue-router';
+
 export default {
     data(){
         return{
@@ -84,7 +85,11 @@ export default {
     <RouterLink class="branchRouter" to="/practice5/branch4">branch4</RouterLink>
     <RouterLink class="branchRouter" to="/practice5/branch5">branch5</RouterLink>
     <RouterLink class="branchRouter" to="/practice5/branch6">branch6</RouterLink>
+
 </div>
+
+    <RouterView />
+
 </template>
 
 
