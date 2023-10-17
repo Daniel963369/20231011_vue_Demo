@@ -18,7 +18,13 @@ export default {
             checkboxText:[],
             radioText:[],
 
+            colorBlue:"color:blue",
+            textAlignCenter:"text-align:center",
+            bold:"font-weight:bold",
             
+
+            imgArr:[],
+            hotelroom:[]
         }
 },components:{
     test
@@ -79,6 +85,27 @@ method:{
         <input type="radio" v-model="radioText" name="food" value="fish">
         <p>{{ this.radioText }}</p>
     </div>
+
+    <div class="test5">
+        <label for="">究極天使獸</label>
+        <input type="radio" value="https://digimon.net/cimages/digimon/seraphimon.jpg" v-model="imgArr">
+        <label for="">神聖天女獸</label>
+        <input type="radio" value="https://truth.bahamut.com.tw/s01/202001/00f91b6c792a025c121a968633b78f8b.JPG" v-model="imgArr">
+        <label for="">基路比獸</label>
+        <input type="radio" value="https://digimon.net/cimages/digimon/cherubimon.jpg" v-model="imgArr">
+        <img :src="imgArr" alt="">
+    </div>
+    <hr>
+
+    <div class="test6">
+        <label for="">高級套房</label>
+        <input type="radio" v-model="hotelroom" value="https://www.sheratongrandtaipei.com/files/pages_15973110501159uwd27_l.jpg">
+        <label for="">一般套房</label>
+        <input type="radio" v-model="hotelroom" value="https://www.sheratongrandtaipei.com/files/pages_15973109311159ut025_l.jpg">
+        <label for="">平價套房</label>
+        <input type="radio" v-model="hotelroom" value="https://www.sheratongrandtaipei.com/files/pages_15973114171159v9j51_l.jpg">
+        <img v-bind:src="hotelroom" alt="">
+    </div>
 </div>
 </template>
 
@@ -119,6 +146,16 @@ method:{
     text-align:center;
 }
 .test4{
+    width:100vw;
+    
+    text-align:center;
+}
+.test5{
+    width:100vw;
+    
+    text-align:center;
+}
+.test6{
     width:100vw;
     
     text-align:center;

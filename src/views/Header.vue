@@ -20,6 +20,9 @@
         <RouterLink class="navPractice3" to="/practice3">practice3</RouterLink>
         <RouterLink class="navVbind" to="/Vbind">v-bind</RouterLink>
         <RouterLink class="navPractice4" to="/practice4">practice4</RouterLink>
+        <RouterLink class="navVifAndVshow" to="/VifAndVshow">VifAndVshow</RouterLink>
+        <RouterLink class="navPractice5" to="/practice5">practice5</RouterLink>
+        
         
     </nav>
 </template>

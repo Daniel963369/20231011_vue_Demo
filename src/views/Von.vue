@@ -8,6 +8,7 @@ export default{
             guess:"",
             max:100,
             min:1,
+            count:0,
             
         }
     },
@@ -31,8 +32,12 @@ export default{
                     console.log("小一點");
                     this.max = this.guess;
                 }
+            },
+
+
+            increment(){
+                this.count = this.count +1
             }
-            
     }
 }
 </script>
@@ -46,6 +51,10 @@ export default{
         <input type="number" v-model="this.guess">
         <button type="button" v-on:click="guess1()">開始猜</button>
     </div>
+
+    <button v-on:click="increment">
+        <p>{{ this.count }}</p>
+    </button>
 </template>
 
 <style lang="scss" scoped>

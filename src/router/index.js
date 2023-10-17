@@ -53,6 +53,42 @@ const router = createRouter({
       name:'practice4',
       component: () => import('../views/practice4.vue')
     },
+    {
+      path:'/VifAndVshow',
+      name:'VifAndVshow',
+      component: () => import('../views/VifAndVshow.vue')
+    },
+    {
+      path:'/practice5',
+      name:'practice5',
+      component: () => import('../views/practice5.vue'),
+      branch:[
+      {
+        path:"branch1",
+        component: () => import('../components/branch1.vue')
+      },
+      {
+        path:"branch2",
+        component: () => import('../components/branch2.vue')
+      },
+      {
+        path:"branch3",
+        component: () => import('../components/branch3.vue')
+      },
+      {
+        path:"branch4",
+        component: () => import('../components/branch4.vue')
+      },
+      {
+        path:"branch5",
+        component: () => import('../components/branch5.vue')
+      },
+      {
+        path:"branch6",
+        component: () => import('../components/branch6.vue')
+      },
+    ]
+    },
   ]
 })
 
