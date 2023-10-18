@@ -1,13 +1,15 @@
 <script>
-import propSign2 from './propSign2.vue'
+import propsSign2 from './/../components/propsSign2.vue'
 export default {
     data(){
         return{
             page:1,
+
+
         }
     },
     components:{
-        propSign2
+        propsSign2
     },
 
     methods:{
@@ -39,7 +41,7 @@ export default {
 
 <div class="changePage" v-if="page == 2"> 
 
-    <propSign2 />
+    <propsSign2 />
 </div>
 
 
