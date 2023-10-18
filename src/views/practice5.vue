@@ -20,6 +20,7 @@ export default {
     components:{
         RouterLink,
         RouterView,
+        
     }
 }
 
@@ -27,7 +28,7 @@ export default {
 
 
 <template>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 
 
@@ -46,6 +47,7 @@ export default {
         <div class="rectangle">
             <p>ログイン　｜　お問い合わせ</p>
         </div>
+    
     </div>
 
 
@@ -73,7 +75,7 @@ export default {
 
     <div class="footer">
         <div class="footerRectangle" v-for="footerRectangle in Square">
-            <p>{{ footerRectangle.Square }}</p>
+            <p>{{ footerRectangle.name }}</p>
         </div>
     </div>
 

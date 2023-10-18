@@ -22,6 +22,8 @@
         <RouterLink class="navPractice4" to="/practice4">practice4</RouterLink>
         <RouterLink class="navVifAndVshow" to="/VifAndVshow">VifAndVshow</RouterLink>
         <RouterLink class="navPractice5" to="/practice5">practice5</RouterLink>
+        <RouterLink class="navProps" to="/props">props</RouterLink>
+        <RouterLink class="navPropsSign" to="/propsSign">propsSign</RouterLink>
         
         
     </nav>
@@ -78,6 +80,31 @@
         color:green;
     }
     .navVbind{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navPractice4{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navVifAndVshow{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navPractice5{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navProps{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navPropsSign{
         margin-right:1%;
         text-decoration:none;
         color:green;

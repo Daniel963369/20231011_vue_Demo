@@ -50,7 +50,7 @@ export default {
     <div class="footer">
         <div class="footerZone">
             <div class="footerRectangle" v-for="footerRectangle in rectangle">
-                <p>{{ footerRectangle.rectangle }}</p>
+                <p>{{ footerRectangle.name }}</p>
             </div>
         </div>
     </div>

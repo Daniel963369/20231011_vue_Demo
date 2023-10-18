@@ -14,7 +14,9 @@ export default {
         }
     },
     methods:{
-    
+        goOtherWat(){
+            this.$router.push("/practice5")
+        }
     }
 }
 
@@ -56,6 +58,10 @@ export default {
     <div class="test4">
         <img v-bind:src="blizzardMax" alt="">
     </div>
+    
+    <div class="test5">
+        <button v-on:click="goOtherWat">前往practice5</button>
+    </div>
 
 
 </template>
@@ -95,6 +101,16 @@ export default {
     text-align:center;
 }
 .test3{
+    width:100vw;
+    
+    text-align:center;
+}
+.test4{
+    width:100vw;
+    
+    text-align:center;
+}
+.test5{
     width:100vw;
     
     text-align:center;

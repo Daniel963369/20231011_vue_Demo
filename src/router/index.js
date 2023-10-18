@@ -90,6 +90,16 @@ const router = createRouter({
       },
     ]
     },
+    {
+      path:'/props',
+      name:'props',
+      component: () => import('../views/props.vue'),
+    },
+    {
+      path:'/propsSign',
+      name:'propsSign',
+      component: () =>import('../views/propsSign.vue'),
+    }
   ]
 })
 
