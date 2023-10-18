@@ -1,25 +1,13 @@
 <script>
-import signChild from '../components/signChild.vue'
+import propSign2 from './propSign2.vue'
 export default {
     data(){
         return{
             page:1,
-
-            propsObj:{
-                name:"王大明",
-                phone:"09xx-xxx-xxx",
-                email:"xxxxx@gmail.com",
-                密碼:"************",
-                住址:"宇宙城火星村台北鄉",
-                畢業學校:"火影大學",
-                性別:"男",
-                興趣:"聽音樂上網"
-            }
-
         }
     },
     components:{
-        signChild,
+        propSign2
     },
 
     methods:{
@@ -49,13 +37,12 @@ export default {
 </div>
 
 
-<div class="changePage" v-if="page == 2">
+<div class="changePage" v-if="page == 2"> 
 
-    
-    <signChild
-    :person="propsObj"
-    />
+    <propSign2 />
 </div>
+
+
 </template>
 
 <style lang="scss" scoped>
