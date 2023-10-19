@@ -99,6 +99,11 @@ const router = createRouter({
       path:'/propsSign',
       name:'propsSign',
       component: () =>import('../views/propsSign.vue'),
+    },
+    {
+      path:'/Emit',
+      name:'Emit',
+      component: () =>import('../views/Emit.vue'),
     }
   ]
 })

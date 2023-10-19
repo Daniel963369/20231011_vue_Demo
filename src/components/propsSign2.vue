@@ -58,11 +58,11 @@ export default {
             <label for="">性別</label>
             <div class="male">
                 <label for="">男生</label>
-                <input type="radio" placeholder="" v-model="propsObj.gender">
+                <input type="radio" value="boy" placeholder="" v-model="propsObj.gender">
             </div>
             <div class="female">
                 <label for="">女生</label>
-                <input type="radio" placeholder="" v-model="propsObj.gender">
+                <input type="radio" value="girl" placeholder="" v-model="propsObj.gender">
             </div>
         </div>
         <div class="interest">
@@ -86,13 +86,13 @@ export default {
     width:100vw;
     height:100vh;
     text-align:center;
-    background-color:pink;
+    background-image: url(../../public/都市景象圖.avif);
 
     .registerPage{
         width:80%;
         margin:0 10%;
-        border:1px solid black;
-        background-color:rgb(210, 51, 210);
+        
+        background-color:transparent;
         color:white;
     
         h1{
@@ -118,18 +118,18 @@ export default {
         }
         .school{
             margin-bottom:1%;
-            margin-right:1.2%;
+            margin-right:2.8%;
         }
         .gender{
             display:flex;
             margin-bottom:1%;
-            margin-left:46%;
+            margin-left:41.3%;
 
             .male{
-                margin-left:2%
+                margin-left:2%;
             }
             .female{
-                margin-left:2%
+                margin-left:5%;
             }
         }
         .interest{

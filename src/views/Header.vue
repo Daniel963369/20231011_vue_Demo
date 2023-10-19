@@ -24,6 +24,7 @@
         <RouterLink class="navPractice5" to="/practice5">practice5</RouterLink>
         <RouterLink class="navProps" to="/props">props</RouterLink>
         <RouterLink class="navPropsSign" to="/propsSign">propsSign</RouterLink>
+        <RouterLink class="navEmit" to="/Emit">Emit</RouterLink>
         
         
     </nav>
