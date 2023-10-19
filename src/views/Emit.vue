@@ -3,7 +3,8 @@ import child2 from '../components/child2.vue'
 export default {
     data(){
         return{
-            childText:""
+            childText:"",
+            childText2:"",
         }
     },
 
@@ -14,8 +15,17 @@ export default {
     methods:{
 
         emitObj(Hell){
-            console.log(Hell)
             this.childText = Hell
+            console.log(Hell)
+        },
+
+        getNumber1(Number1){
+            this.childText = Number1
+            console.log(Number1)
+        },
+        getNumber2(Number2){
+            this.childText2 = Number2
+            console.log(Number2)
         },
     }
 }
@@ -28,7 +38,9 @@ export default {
     {{ this.childText }}
 
 <div class="show"></div>
-<child2 @apple="emitObj" />
+<child2 @apple="emitObj"
+@nu1="getNumber1"
+@nu2="getNumber2" />
 </template>
 
 

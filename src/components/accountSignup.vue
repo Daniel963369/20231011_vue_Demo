@@ -1,0 +1,126 @@
+<script>
+export default {
+    data(){
+        return{
+
+        }
+    }
+}
+
+
+</script>
+
+
+<template>
+<div class="body">
+    
+    <div class="signUpPage"> 
+        <h1>Sign Up</h1>
+        <div class="signUpAccount">
+            <p>Account</p>
+            <input type="text">
+        </div>
+        <div class="signUpPassword">
+            <p>Password</p>
+            <input type="text">
+        </div>
+        <div class="signUpRepeat">
+            <p>repeat Password</p>
+            <input type="text">
+        </div>
+        <div class="btn">
+            <button type="button" class="cancelBtn">cancel</button>
+            <button type="button" class="signUpBtn">sign up</button>
+        </div>
+    </div>
+</div>
+
+</template>
+
+
+<style lang="scss" scoped>
+    .body{
+        width:100vw;
+        flex-direction:column;
+        text-align:center;
+        background-image: url(../../public/都市景象圖.avif);
+        display:flex;
+        margin-top:2%;
+
+        .signUpPage{
+            width:80%;
+            margin:0 10%;
+        
+            flex-direction:column;
+            
+
+            h1{
+                color:white;
+                
+            }
+
+            .signUpAccount{
+                margin-top:3%;
+                p{
+                    margin-right:30%;
+                    color:white;
+                }
+                input{
+                    width:35%;
+                    height:6vh;
+                    border-radius:10px 10px 10px 10px;
+                }
+            }
+            .signUpPassword{
+                margin-top:3%;
+                p{
+                    margin-right:30%;
+                    color:white;
+                }
+                input{
+                    width:35%;
+                    height:6vh;
+                    border-radius:10px 10px 10px 10px;
+                }
+            }
+            .signUpRepeat{
+                margin-top:3%;
+                p{
+                    margin-right:25%;
+                    color:white;
+                }
+                input{
+                    width:35%;
+                    height:6vh;
+                    border-radius:10px 10px 10px 10px;
+                }
+            }
+
+            .btn{
+                margin-top:5%;
+                display:flex;
+
+                .cancelBtn{
+                    width:8vw;
+                    height:5vh;
+                    border-radius:5px 5px 5px 5px;
+                    background-color:rgb(181, 47, 114);
+                    color:white;
+                    margin-left:36%;
+                }
+
+                .signUpBtn{
+                    width:8vw;
+                    height:5vh;
+                    border-radius:5px 5px 5px 5px;
+                    background-color:rgb(56, 61, 208);
+                    color:white;
+                    margin-left:5%;
+                }
+            }
+
+
+
+        }
+    }
+</style>

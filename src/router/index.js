@@ -104,6 +104,11 @@ const router = createRouter({
       path:'/Emit',
       name:'Emit',
       component: () =>import('../views/Emit.vue'),
+    },
+    {
+      path:'/accountLogin',
+      name:'accountLogin',
+      component: () =>import('../views/accountLogin.vue'),
     }
   ]
 })

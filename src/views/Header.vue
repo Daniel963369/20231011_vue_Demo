@@ -25,6 +25,7 @@
         <RouterLink class="navProps" to="/props">props</RouterLink>
         <RouterLink class="navPropsSign" to="/propsSign">propsSign</RouterLink>
         <RouterLink class="navEmit" to="/Emit">Emit</RouterLink>
+        <RouterLink class="navaccountLogin" to="/accountLogin">accountLogin</RouterLink>
         
         
     </nav>
@@ -106,6 +107,16 @@
         color:green;
     }
     .navPropsSign{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navEmit{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navaccountLogin{
         margin-right:1%;
         text-decoration:none;
         color:green;
