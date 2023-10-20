@@ -10,52 +10,44 @@ export default {
       plusNum: 0,
       neNum: 0,
       totalNum: 0,
-      arr: [],
+      independentItem:"",
+      independentAmount:"",
       Title:"Expense Tracker",
       Title2:"Kouhei",
-      Title3:"Your Balance"
+      Title3:"Your Balance",
+      costContainer:[
+        
+    ],
+      obj:[
+
+      ]
+      
     }
   },
   methods: {
-    cool() {
-      let obj = {
-        name: "Breakfast",
-        money: ""
-      }
-
-      let obj2 = {
-        name: "lunch",
-        money: ""
-      }
-
-      let obj3 = {
-        name: "Design Case",
-        money:""
-      }
-
-      let obj4 = {
-        name: "BlueRay Video",
-        money:""
-      }
-      this.arr.push(obj)
-      this.arr.push(obj2)
-      this.arr.push(obj3)
-      this.arr.push(obj4)
-    },
-
     changePage(){
       this.page = 2
     },
     changeaddtransactionPage(){
       this.addtransactionPage = 2
       page = 0
-    }
-  },
+    },
+    getData(x){
+      this.costContainer.push(x)
+      console.log(x)
+    },
+    },
+
+
   components: {
       addtransaction,
       deletePage
       
-  }
+  },
+  
+
+    
+  
 }
 </script>
 
@@ -82,12 +74,14 @@ export default {
         <button type="button" class="numBtn" v-on:click="cool">Add transaction</button>
       </div>
       <div class="content">
-        <div class="block" v-for="item in arr">
-          <span>{{ item.name }}</span>
-          <input type="number">{{ item.money }}
+        
+        <div class="block" v-for="item in costContainer">
+          <span>{{ item.thing }}</span>
+          <span>{{ item.amount }}</span>
           <button type="button" class="blockBtn">delete</button>
         </div>
       </div>
+      <addtransaction @data="getData"/>
     </div>
   </div>
 

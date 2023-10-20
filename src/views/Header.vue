@@ -26,6 +26,7 @@
         <RouterLink class="navPropsSign" to="/propsSign">propsSign</RouterLink>
         <RouterLink class="navEmit" to="/Emit">Emit</RouterLink>
         <RouterLink class="navaccountLogin" to="/accountLogin">accountLogin</RouterLink>
+        <RouterLink class="navdataflow" to="/dataflow">dataflow</RouterLink>
         
         
     </nav>

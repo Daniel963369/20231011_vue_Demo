@@ -109,7 +109,12 @@ const router = createRouter({
       path:'/accountLogin',
       name:'accountLogin',
       component: () =>import('../views/accountLogin.vue'),
-    }
+    },
+    {
+      path:'/dataflow',
+      name:'dataflow',
+      component: () =>import('../views/dataflow.vue'),
+    },
   ]
 })
 

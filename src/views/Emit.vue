@@ -40,7 +40,8 @@ export default {
 <div class="show"></div>
 <child2 @apple="emitObj"
 @nu1="getNumber1"
-@nu2="getNumber2" />
+@nu2="getNumber2"
+:num2="childText2" />
 </template>
 
 

@@ -2,6 +2,18 @@
 export default {
     data(){
         return{
+            cost:{
+                thing:"",
+                amount:"",
+            },
+            
+            
+        }
+    },
+
+    methods:{
+        dataGo(){
+            this.$emit("data",this.cost)
 
         }
     }
@@ -13,16 +25,16 @@ export default {
 
 <template>
     <div class="body">
-        <div class="deleteZone">
+        <div class="addtransactionZone">
             <div class="textZone">
                 <label for="">Text</label>
-                <input type="text">
+                <input type="text" v-model="cost.thing">
             </div>
             <div class="amountZone">
                 <label for="">Amount</label>
-                <input type="text">
+                <input type="text" v-model="cost.amount">
             </div>
-            <button type="button" class="btn">Add transaction</button>
+            <button type="button" class="btn" @click="dataGo()">Add transaction</button>
         </div>
     </div>
 </template>
@@ -36,7 +48,7 @@ export default {
     justify-content: center;
     align-items: center;
 
-    .deleteZone{
+    .addtransactionZone{
         width:35%;
         height:50%;
         border:1px solid black;
