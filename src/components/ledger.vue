@@ -7,20 +7,16 @@ export default {
     return {
       page:1,
       addtransactionPage:1,
-      plusNum: 0,
+      plusNum:0,  
       neNum: 0,
       totalNum: 0,
-      independentItem:"",
-      independentAmount:"",
       Title:"Expense Tracker",
       Title2:"Kouhei",
       Title3:"Your Balance",
       costContainer:[
         
     ],
-      obj:[
-
-      ]
+    
       
     }
   },
@@ -34,8 +30,18 @@ export default {
     },
     getData(x){
       this.costContainer.push(x)
-      console.log(x)
+      if(this.costContainer.amount >= 0){
+        this.plusNum = this.costContainer.reduce((total, item) => total + Number(item.amount), 0);
+      }
+      else {
+        this.neNum = this.costContainer.reduce((total, item) => total + Number(item.amount), 0);
+      }
+
+      this.totalNum = this.plusNum + this.neNum
     },
+
+
+
     },
 
 
@@ -81,7 +87,8 @@ export default {
           <button type="button" class="blockBtn">delete</button>
         </div>
       </div>
-      <addtransaction @data="getData"/>
+      <addtransaction @data="getData" />
+      
     </div>
   </div>
 

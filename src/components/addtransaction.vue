@@ -5,6 +5,7 @@ export default {
             cost:{
                 thing:"",
                 amount:"",
+
             },
             
             
@@ -13,9 +14,14 @@ export default {
 
     methods:{
         dataGo(){
-            this.$emit("data",this.cost)
+            this.$emit("data",this.cost )
+            this.cost = { thing: "", amount: "" }
+        },
 
-        }
+        
+        
+        
+
     }
 }
 
@@ -32,7 +38,7 @@ export default {
             </div>
             <div class="amountZone">
                 <label for="">Amount</label>
-                <input type="text" v-model="cost.amount">
+                <input type="number" v-model="cost.amount">
             </div>
             <button type="button" class="btn" @click="dataGo()">Add transaction</button>
         </div>
