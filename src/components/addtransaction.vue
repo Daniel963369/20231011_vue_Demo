@@ -51,10 +51,10 @@ export default {
     width:100vw;
     height:100vh;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    
 
     .addtransactionZone{
+        position:absolute;
         width:35%;
         height:50%;
         border:1px solid black;

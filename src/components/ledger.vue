@@ -7,6 +7,8 @@ export default {
     return {
       page:1,
       addtransactionPage:1,
+      showAddtransaction:false,
+      showDelete:false,
       plusNum:0,  
       neNum: 0,
       totalNum: 0,
@@ -39,6 +41,14 @@ export default {
 
       this.totalNum = this.plusNum + this.neNum
     },
+
+    toggleAddtransaction(){
+      this.showAddtransaction = !this.showAddtransaction
+    },
+    
+    toggleDelete(){
+      this.showDelete = !this.showDelete
+    }
 
 
 
@@ -77,18 +87,17 @@ export default {
         </div>
       </div>
       <div class="btn">
-        <button type="button" class="numBtn" v-on:click="cool">Add transaction</button>
+        <button type="button" class="numBtn" v-on:click="toggleAddtransaction()">Add transaction</button>
       </div>
+      <deletePage  v-if="showDelete"/>
       <div class="content">
-        
         <div class="block" v-for="item in costContainer">
           <span>{{ item.thing }}</span>
           <span>{{ item.amount }}</span>
-          <button type="button" class="blockBtn">delete</button>
+          <button type="button" class="blockBtn" v-on:click="toggleDelete()">delete</button>
         </div>
+        <addtransaction @data="getData" v-if="showAddtransaction"/>
       </div>
-      <addtransaction @data="getData" />
-      
     </div>
   </div>
 
