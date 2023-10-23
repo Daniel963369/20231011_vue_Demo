@@ -5,14 +5,14 @@ import deletePage from './deletePage.vue'
 export default {
   data() {
     return {
-      key:0,
-      page:1,
-      addtransactionPage:1,
+      key:0,//控制進入陣列的物件數值
+      page:1, //會計頁面
+      // addtransactionPage:1,
       showAddtransaction:false,
-      showDelete:false,
-      plusNum:0,  
-      neNum: 0,
-      totalNum: 0,
+      showDelete:false, 
+      plusNum:0,  //收入的值
+      neNum: 0,   //支出的值
+      totalNum: 0,  //總額
       Title:"Expense Tracker",
       Title2:"Kouhei",
       Title3:"Your Balance",
@@ -24,21 +24,15 @@ export default {
     }
   },
   methods: {
-    changePage(){
-      this.page = 2
-    },
-    changeaddtransactionPage(){
-      this.addtransactionPage = 2
-      page = 0
-    },
+    // changePage(){
+    //   this.page = 2
+    // },
+    // changeaddtransactionPage(){
+    //   this.addtransactionPage = 2
+    //   page = 0
+    // },
     getData(x){
       this.costContain.push(x)
-      // if(x.amount >= 0){
-      //   this.plusNum = this.costContain.reduce((total, item) => total + Number(item.amount), 0);
-      // }
-      // else {
-      //   this.neNum = this.costContain.reduce((total1, item1) => total1 + Number(item1.amount), 0);
-      // }
       if(x.amount >= 0){        //第二個卡關
         this.plusNum = this.plusNum + x.amount
       }
@@ -69,7 +63,7 @@ export default {
       this.showDelete =x2
     },
 
-    getNewNum(x3){
+    getNewNum(x3){ //最後的卡關
       if(x3 >= 0){
         this.plusNum = this.plusNum - x3
         

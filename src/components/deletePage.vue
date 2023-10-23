@@ -26,9 +26,9 @@ export default {
             
         },
 
-        toggleDeletePage(){
-            this.deletePage = !this.deletePage
-        }
+        // toggleDeletePage(){
+        //     this.deletePage = !this.deletePage
+        // }
     }
 }
 
@@ -40,7 +40,7 @@ export default {
 <div class="body">
     <div class="deleteZone">
         <p>Sure to Delete?</p>
-        <button type="button" @click="allDelete(); toggleDeletePage()">Delete</button>
+        <button type="button" @click="allDelete()">Delete</button>
     </div>
 </div>
 </template>
