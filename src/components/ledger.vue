@@ -39,7 +39,7 @@ export default {
       // else {
       //   this.neNum = this.costContain.reduce((total1, item1) => total1 + Number(item1.amount), 0);
       // }
-      if(x.amount >= 0){
+      if(x.amount >= 0){        //第二個卡關
         this.plusNum = this.plusNum + x.amount
       }
       else{

@@ -11,11 +11,11 @@ export default {
     ],
 
     methods:{
-        allDelete(){
+        allDelete(){   //第三個卡關
             this.$emit("newData",this.deleteCostContain)
             console.log(this.deleteCostContain)
             let y;
-            y = this.deleteCostContain[this.deleteIndex].amount
+            y = this.deleteCostContain[this.deleteIndex].amount //先得到要刪除的值並傳回父層
             this.$emit("getNewNum",y)
             console.log(y)
 

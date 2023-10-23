@@ -12,10 +12,10 @@ export default {
         }
     },
 
-    methods:{
+    methods:{  //第一個卡關
         dataGo(){
             this.$emit("data",this.cost )
-            this.cost = { thing: "", amount: "" }
+            this.cost = { thing: "", amount: "" } //得把整個物件都一起傳過去才行
         },
 
         
@@ -30,7 +30,7 @@ export default {
 
 
 <template>
-    <div class="body">
+    <div class="body"> 
         <div class="addtransactionZone">
             <div class="textZone">
                 <label for="">Text</label>
