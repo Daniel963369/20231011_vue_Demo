@@ -12,17 +12,17 @@ export default {
 
     methods:{
         allDelete(){
-            this.deleteCostContain.splice(this.deleteIndex,1)
             this.$emit("newData",this.deleteCostContain)
             console.log(this.deleteCostContain)
             let y;
             y = this.deleteCostContain[this.deleteIndex].amount
+            this.$emit("getNewNum",y)
             console.log(y)
 
-
+            this.deleteCostContain.splice(this.deleteIndex,1)
             let x =false
             this.$emit("delback",x)
-            this.$emit("getNewNum",y)
+            
             
         },
 

@@ -79,6 +79,7 @@ export default {
         this.neNum = this.neNum - x3
         
       }
+      this.totalNum = this.plusNum + this.neNum
     }
 
 
