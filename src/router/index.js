@@ -115,6 +115,11 @@ const router = createRouter({
       name:'dataflow',
       component: () =>import('../views/dataflow.vue'),
     },
+    {
+      path:'/provideAndInject',
+      name:'provideAndInject',
+      component: () =>import('../views/provideAndInject.vue'),
+    },
   ]
 })
 

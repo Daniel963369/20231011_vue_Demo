@@ -27,6 +27,7 @@
         <RouterLink class="navEmit" to="/Emit">Emit</RouterLink>
         <RouterLink class="navaccountLogin" to="/accountLogin">accountLogin</RouterLink>
         <RouterLink class="navdataflow" to="/dataflow">dataflow</RouterLink>
+        <RouterLink class="navprovideAndInject" to="/provideAndInject">provideAndInject</RouterLink>
         
         
     </nav>

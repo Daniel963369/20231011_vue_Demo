@@ -5,6 +5,7 @@ import deletePage from './deletePage.vue'
 export default {
   data() {
     return {
+      key:0,
       page:1,
       addtransactionPage:1,
       showAddtransaction:false,
@@ -15,7 +16,7 @@ export default {
       Title:"Expense Tracker",
       Title2:"Kouhei",
       Title3:"Your Balance",
-      costContainer:[
+      costContain :[
         
     ],
     
@@ -31,12 +32,18 @@ export default {
       page = 0
     },
     getData(x){
-      this.costContainer.push(x)
-      if(this.costContainer.amount >= 0){
-        this.plusNum = this.costContainer.reduce((total, item) => total + Number(item.amount), 0);
+      this.costContain.push(x)
+      // if(x.amount >= 0){
+      //   this.plusNum = this.costContain.reduce((total, item) => total + Number(item.amount), 0);
+      // }
+      // else {
+      //   this.neNum = this.costContain.reduce((total1, item1) => total1 + Number(item1.amount), 0);
+      // }
+      if(x.amount >= 0){
+        this.plusNum = this.plusNum + x.amount
       }
-      else {
-        this.neNum = this.costContainer.reduce((total, item) => total + Number(item.amount), 0);
+      else{
+        this.neNum = this.neNum + x.amount
       }
 
       this.totalNum = this.plusNum + this.neNum
@@ -48,7 +55,34 @@ export default {
     
     toggleDelete(){
       this.showDelete = !this.showDelete
+    },
+
+    indexTransfer(index){
+      this.key = index
+    },
+
+    deleteDataTransfer(x1){
+      x1 = this.costContain
+    },
+
+    delback(x2){
+      this.showDelete =x2
+    },
+
+    getNewNum(x3){
+      if(x3 >= 0){
+        this.plusNum = this.plusNum - x3
+        
+      }
+
+      else{
+        this.neNum = this.neNum - x3
+        
+      }
     }
+
+
+ 
 
 
 
@@ -89,12 +123,12 @@ export default {
       <div class="btn">
         <button type="button" class="numBtn" v-on:click="toggleAddtransaction()">Add transaction</button>
       </div>
-      <deletePage  v-if="showDelete"/>
+      <deletePage @delback="delback" @getNewNum="getNewNum" :deleteCostContain="costContain" :deleteIndex="key" @newData="deleteDataTransfer"  v-if="showDelete"/>
       <div class="content">
-        <div class="block" v-for="item in costContainer">
+        <div class="block" v-for="item,index in costContain">
           <span>{{ item.thing }}</span>
           <span>{{ item.amount }}</span>
-          <button type="button" class="blockBtn" v-on:click="toggleDelete()">delete</button>
+          <button type="button" class="blockBtn" v-on:click="toggleDelete();indexTransfer(index)" >delete</button>
         </div>
         <addtransaction @data="getData" v-if="showAddtransaction"/>
       </div>
