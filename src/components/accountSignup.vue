@@ -16,14 +16,15 @@ export default {
 
     methods:{
         registerPerson(){
-            this.register.account = this.register.account
-            this.register.password = this.register.password
-            this.rePassword = this.register.rePassword
-            localStorage.setItem("user",JSON.stringify(this.register))
-            this.get=JSON.parse(localStorage.getItem("user"))
-            this.$emit("data",this.get)
-            console.log(this.get)
-            alert("創建成功")
+            // this.register.account = this.register.account
+            // this.register.password = this.register.password
+            // this.rePassword = this.register.rePassword
+            // localStorage.setItem("user",JSON.stringify(this.register))
+            // this.get=JSON.parse(localStorage.getItem("user"))
+            // this.$emit("data",this.get)
+            // console.log(this.get)
+            // alert("創建成功")
+            this.$router.push('/accountLogin')
             
         },
     },
