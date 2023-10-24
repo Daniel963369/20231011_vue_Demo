@@ -29,6 +29,7 @@
         <RouterLink class="navdataflow" to="/dataflow">dataflow</RouterLink>
         <RouterLink class="navprovideAndInject" to="/provideAndInject">provideAndInject</RouterLink>
         <RouterLink class="navWatchAndComputed" to="/WatchAndComputed">WatchAndComputed</RouterLink>
+        <RouterLink class="navbar" to="/HTMLANDCSS">HTML&CSS</RouterLink>
         
         
     </nav>
@@ -135,6 +136,11 @@
         color:green;
     }
     .navWatchAndComputed{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navbar{
         margin-right:1%;
         text-decoration:none;
         color:green;

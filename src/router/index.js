@@ -125,6 +125,11 @@ const router = createRouter({
       name:'WatchAndComputed',
       component: () =>import('../views/WatchAndComputed.vue'),
     },
+    {
+      path:'/HTMLANDCSS',
+      name:'HTMLANDCSS',
+      component: () =>import('../views/HTMLANDCSS.vue'),
+    },
   ]
 })
 
