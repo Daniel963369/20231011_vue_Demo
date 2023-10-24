@@ -52,6 +52,7 @@ export default {
     height:100vh;
     display:flex;
     
+    
 
     .addtransactionZone{
         position:absolute;
@@ -59,6 +60,7 @@ export default {
         height:50%;
         border:1px solid black;
         text-align:center;
+        
 
         .textZone{
             

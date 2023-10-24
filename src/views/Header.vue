@@ -28,6 +28,7 @@
         <RouterLink class="navaccountLogin" to="/accountLogin">accountLogin</RouterLink>
         <RouterLink class="navdataflow" to="/dataflow">dataflow</RouterLink>
         <RouterLink class="navprovideAndInject" to="/provideAndInject">provideAndInject</RouterLink>
+        <RouterLink class="navWatchAndComputed" to="/WatchAndComputed">WatchAndComputed</RouterLink>
         
         
     </nav>
@@ -119,6 +120,21 @@
         color:green;
     }
     .navaccountLogin{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navdataflow{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navprovideAndInject{
+        margin-right:1%;
+        text-decoration:none;
+        color:green;
+    }
+    .navWatchAndComputed{
         margin-right:1%;
         text-decoration:none;
         color:green;

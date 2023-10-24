@@ -120,6 +120,11 @@ const router = createRouter({
       name:'provideAndInject',
       component: () =>import('../views/provideAndInject.vue'),
     },
+    {
+      path:'/WatchAndComputed',
+      name:'WatchAndComputed',
+      component: () =>import('../views/WatchAndComputed.vue'),
+    },
   ]
 })
 
