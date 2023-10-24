@@ -1,10 +1,37 @@
 <script>
+import accountLogin from '../views/accountLogin.vue'
 export default {
     data(){
         return{
-
+            register:{
+            account:"",
+            password:"",
+            rePassword:""
+            },
+            get:"",
+            changePage:1
         }
-    }
+    },
+
+    methods:{
+        registerPerson(){
+            this.register.account = this.register.account
+            this.register.password = this.register.password
+            this.rePassword = this.register.rePassword
+            localStorage.setItem("user",JSON.stringify(this.register))
+            this.get=JSON.parse(localStorage.getItem("user"))
+            this.$emit("data",this.get)
+            console.log(this.get)
+            alert("創建成功")
+        },
+
+        goToAccountLogin(){
+            this.changePage = 2
+        }
+    },
+    components:{
+        accountLogin
+    },
 }
 
 
@@ -12,28 +39,34 @@ export default {
 
 
 <template>
-<div class="body">
+<div class="body" v-if="changePage == 1">
     
     <div class="signUpPage"> 
         <h1>Sign Up</h1>
         <div class="signUpAccount">
             <p>Account</p>
-            <input type="text">
+            <input v-model="register.account" type="text">
         </div>
         <div class="signUpPassword">
             <p>Password</p>
-            <input type="text">
+            <input v-model="register.password" type="password">
         </div>
         <div class="signUpRepeat">
             <p>repeat Password</p>
-            <input type="text">
+            <input type="password" v-model="register.rePassword">
         </div>
         <div class="btn">
             <button type="button" class="cancelBtn">cancel</button>
-            <button type="button" class="signUpBtn">sign up</button>
+            <button type="button" class="signUpBtn" v-on:click="registerPerson();goToAccountLogin();">sign up</button>
         </div>
     </div>
 </div>
+
+<div class="turnToAccountLogin" v-if="changePage == 2">
+
+    <accountLogin />
+</div>
+
 
 </template>
 
