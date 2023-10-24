@@ -1,5 +1,4 @@
 <script>
-import accountLogin from '../views/accountLogin.vue'
 export default {
     data(){
         return{
@@ -28,9 +27,6 @@ export default {
         goToAccountLogin(){
             this.changePage = 2
         }
-    },
-    components:{
-        accountLogin
     },
 }
 
