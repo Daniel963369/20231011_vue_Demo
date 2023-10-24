@@ -6,8 +6,8 @@ export default {
         return{
             pageSignUp:1,
             pageLedger:1,
-            account1:"",
-            password1:""
+            account:"",
+            password:""
         }
     },
     components:{
@@ -26,10 +26,10 @@ export default {
         },
 
         getData(x){
-            if(x.account != this.account1){
+            if(x.account != this.account){
                 alert("帳號錯誤")
             }
-            else if(x.password != this.password1){
+            else if(x.password != this.password){
                 alert("密碼錯誤")
             }
             else{
@@ -48,9 +48,9 @@ export default {
 <div class="signPage" v-if="pageSignUp == 1">
     <h1>Expense Tracker</h1>
     <label for="">Account</label>
-    <input type="text" v-model="account1">
+    <input type="text" v-model="account">
     <label for="">Password</label>
-    <input type="password" v-model="password1">
+    <input type="password" v-model="password">
     <div class="btn">
         <button type="button" class="signBtn" @click="changeSignUpPage()">Sign Up</button>
         <button type="button" class="logBtn" @click="changeLedgerPage(); getData();">Log in</button>
