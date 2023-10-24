@@ -1,4 +1,6 @@
 <script>
+import { routeLocationKey } from 'vue-router'
+
 export default {
     data(){
         return{
@@ -18,15 +20,12 @@ export default {
             this.register.password = this.register.password
             this.rePassword = this.register.rePassword
             localStorage.setItem("user",JSON.stringify(this.register))
-            this.get=JSON.parse(localStorage.getItem("user"))
-            this.$emit("data",this.get)
-            console.log(this.get)
+            // this.get=JSON.parse(localStorage.getItem("user"))
+            // this.$emit("data",this.get)
+            // console.log(this.get)
             alert("創建成功")
+            
         },
-
-        goToAccountLogin(){
-            this.changePage = 2
-        }
     },
 }
 
@@ -53,15 +52,12 @@ export default {
         </div>
         <div class="btn">
             <button type="button" class="cancelBtn">cancel</button>
-            <button type="button" class="signUpBtn" v-on:click="registerPerson();goToAccountLogin();">sign up</button>
+            <button type="button" class="signUpBtn" v-on:click="registerPerson()">sign up</button>
         </div>
     </div>
 </div>
 
-<div class="turnToAccountLogin" v-if="changePage == 2">
 
-    <accountLogin />
-</div>
 
 
 </template>
