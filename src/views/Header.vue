@@ -20,13 +20,10 @@
 
 <template>
     <nav class="topNav">
-        <RouterLink class="navHome" to="/">首頁</RouterLink>
+        <RouterLink class="navbar" to="/">首頁</RouterLink>
         <RouterLink class="navbar" to="/HTMLANDCSS">HTML&CSS&JS&Vue作品</RouterLink>
         <RouterLink class="navbar" to="/vueNote">vue筆記</RouterLink>
         <p>{{ location }}</p>
-        
-        
-        
     </nav>
 </template>
 
@@ -38,21 +35,10 @@
     background-color:aqua;
     font-size:24pt;
     color:white;
-    text-align:center;
-
-    
-    
-
-    .navHome{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-
+    display:flex;
+    justify-content:space-around;
     .navbar{
-        margin-right:1%;
         text-decoration:none;
-        color:green;
     }
 }
 </style>
