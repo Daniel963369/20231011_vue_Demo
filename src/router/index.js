@@ -111,6 +111,11 @@ const router = createRouter({
       component: () =>import('../views/accountLogin.vue'),
     },
     {
+      path:'/ledger',
+      name:'ledger',
+      component: () =>import('../components/ledger.vue'),
+    },
+    {
       path:'/dataflow',
       name:'dataflow',
       component: () =>import('../views/dataflow.vue'),

@@ -11,22 +11,25 @@ export default {
             },
             get:"",
             changePage:1
+            
         }
     },
 
     methods:{
         registerPerson(){
-            // this.register.account = this.register.account
-            // this.register.password = this.register.password
-            // this.rePassword = this.register.rePassword
-            // localStorage.setItem("user",JSON.stringify(this.register))
-            // this.get=JSON.parse(localStorage.getItem("user"))
-            // this.$emit("data",this.get)
-            // console.log(this.get)
-            // alert("創建成功")
-            this.$router.push('/accountLogin')
-            
+            this.register.account = this.register.account
+            this.register.password = this.register.password
+            this.rePassword = this.register.rePassword
+            localStorage.setItem("user",JSON.stringify(this.register))
+            this.get=JSON.parse(localStorage.getItem("user"))
+            console.log(this.get)
+            alert("創建成功")
         },
+
+        cancelBtn(){
+            let turnToLogin = 1
+            this.$emit("chanpage",turnToLogin)
+        }
     },
 }
 
@@ -52,7 +55,7 @@ export default {
             <input type="password" v-model="register.rePassword">
         </div>
         <div class="btn">
-            <button type="button" class="cancelBtn">cancel</button>
+            <button type="button" class="cancelBtn" @click="cancelBtn">cancel</button>
             <button type="button" class="signUpBtn" v-on:click="registerPerson()">sign up</button>
         </div>
     </div>

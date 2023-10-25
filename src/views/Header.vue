@@ -1,9 +1,18 @@
 <script>
     import { RouterLink, RouterView } from 'vue-router';
+    import { mapState, mapActions } from 'pinia';
+    import indexState from '../../stores/indexState';
     export default {
         components: {
             RouterLink
-        }
+        },
+        computed:{
+            ...mapState(indexState, ["location", "locationInfo"])
+        },
+
+        methods:{
+            ...mapActions(indexState,["getLocation","setLocation"]),
+        },
     }
 </script>
 
@@ -30,6 +39,8 @@
         <RouterLink class="navprovideAndInject" to="/provideAndInject">provideAndInject</RouterLink>
         <RouterLink class="navWatchAndComputed" to="/WatchAndComputed">WatchAndComputed</RouterLink>
         <RouterLink class="navbar" to="/HTMLANDCSS">HTML&CSS</RouterLink>
+        <p>{{ location }}</p>
+        
         
         
     </nav>

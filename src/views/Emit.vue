@@ -34,8 +34,7 @@ export default {
 
 
 <template>
-    <h1>Emit</h1>
-    {{ this.childText }}
+
 
 <div class="show"></div>
 <child2 @apple="emitObj"
@@ -45,4 +44,9 @@ export default {
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+
+
+
+</style>

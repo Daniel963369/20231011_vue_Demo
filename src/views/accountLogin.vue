@@ -5,9 +5,9 @@ export default {
     data(){
         return{
             pageSignUp:1,
-            pageLedger:1,
             inputAccount:"",
             inputPassword:"",
+            localstorageBottle:[]
         }
     },
     components:{
@@ -20,20 +20,28 @@ export default {
             this.pageSignUp = 2
         },
 
-        changeLedgerPage(){
-            this.pageLedger = 2
-            this.pageSignUp = 0
+        getData(){
+
+            this.localstorageBottle = JSON.parse(localStorage.getItem("user"))
+            console.log(this.localstorageBottle)
+            if(this.localstorageBottle.account == this.inputAccount && this.localstorageBottle.password == this.inputPassword){
+                alert("帳號密碼正確")
+                alert("成功登入")
+                this.pageSignUp = 0
+                this.$router.push('/ledger')
+                
+            }
+            else{
+                alert("帳號密碼錯誤")
+                alert("請重新輸入")
+                
+                
+                
+            }
         },
 
-        getData(x){
-            if(x.account != this.inputAccount || x.password != this.inputPassword){
-                alert("帳號密碼錯誤")
-            }
-
-            else{
-                alert("成功登入")
-                this.pageLedger = 2
-            }
+        toLogin(x){
+            this.pageSignUp = x
         }
     }
 }
@@ -51,22 +59,18 @@ export default {
     <input type="password" v-model="inputPassword">
     <div class="btn">
         <button type="button" class="signBtn" @click="changeSignUpPage()">Sign Up</button>
-        <button type="button" class="logBtn" @click="changeLedgerPage(); getData();">Log in</button>
+        <button type="button" class="logBtn" @click="getData()">Log in</button>
     </div>
 </div>
 
 
 <div class="signUpPage" v-else-if="pageSignUp == 2" >
 
-    <accountSignup @data="getData" />
+    <accountSignup @data="getData" @chanpage="toLogin" />
     
     
 </div>
 
-<div class="ledgerPage" v-if="pageLedger == 2">
-
-    <ledger/>
-</div>
 
 
 </template>
