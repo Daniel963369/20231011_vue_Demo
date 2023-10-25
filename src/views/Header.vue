@@ -31,7 +31,6 @@
         <RouterLink class="navEmit" to="/Emit">Emit</RouterLink>
         <RouterLink class="navaccountLogin" to="/accountLogin">accountLogin</RouterLink>
         <RouterLink class="navdataflow" to="/dataflow">dataflow</RouterLink>
-        <br>
         <RouterLink class="navprovideAndInject" to="/provideAndInject">provideAndInject</RouterLink>
         <RouterLink class="navWatchAndComputed" to="/WatchAndComputed">WatchAndComputed</RouterLink>
         <RouterLink class="navbar" to="/HTMLANDCSS">HTML&CSS</RouterLink>

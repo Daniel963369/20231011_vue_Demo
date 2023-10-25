@@ -30,21 +30,27 @@ export default {
     methods:{
         turnToTravel(){
             this.controlTravelPage = !this.controlTravelPage
+            this.controlPage = !this.controlPage
         },
         turnToCssPractice1(){
             this.controlCssPractice1 = !this.controlCssPractice1
+            this.controlPage = !this.controlPage
         },
         turnToCssPractice2(){
             this.controlCssPractice2 = !this.controlCssPractice2
+            this.controlPage = !this.controlPage
         },
         turnToCssPractice3(){
             this.controlCssPractice3 = !this.controlCssPractice3
+            this.controlPage = !this.controlPage
         },
         turnToCssPractice4(){
             this.controlCssPractice4 = !this.controlCssPractice4
+            this.controlPage = !this.controlPage
         },
         turnToCssPractice5(){
             this.controlCssPractice5 = !this.controlCssPractice5
+            this.controlPage = !this.controlPage
         },
     }
 
