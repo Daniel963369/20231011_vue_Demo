@@ -23,19 +23,15 @@
         <RouterLink class="navHome" to="/">Home</RouterLink>
         <RouterLink class="navtextAndVModel" to="/VtextAndVModel">V-text & V-Model</RouterLink>
         <RouterLink class="navVfor" to="/Vfor">V-for</RouterLink>
-        <RouterLink class="navPractice1" to="/Practice1">practice1</RouterLink>
-        <RouterLink class="navPractice2" to="/practice2">practice2</RouterLink>
         <RouterLink class="navVon" to="/Von">V-on</RouterLink>
-        <RouterLink class="navPractice3" to="/practice3">practice3</RouterLink>
         <RouterLink class="navVbind" to="/Vbind">v-bind</RouterLink>
-        <RouterLink class="navPractice4" to="/practice4">practice4</RouterLink>
         <RouterLink class="navVifAndVshow" to="/VifAndVshow">VifAndVshow</RouterLink>
-        <RouterLink class="navPractice5" to="/practice5">practice5</RouterLink>
         <RouterLink class="navProps" to="/props">props</RouterLink>
         <RouterLink class="navPropsSign" to="/propsSign">propsSign</RouterLink>
         <RouterLink class="navEmit" to="/Emit">Emit</RouterLink>
         <RouterLink class="navaccountLogin" to="/accountLogin">accountLogin</RouterLink>
         <RouterLink class="navdataflow" to="/dataflow">dataflow</RouterLink>
+        <br>
         <RouterLink class="navprovideAndInject" to="/provideAndInject">provideAndInject</RouterLink>
         <RouterLink class="navWatchAndComputed" to="/WatchAndComputed">WatchAndComputed</RouterLink>
         <RouterLink class="navbar" to="/HTMLANDCSS">HTML&CSS</RouterLink>
@@ -76,42 +72,20 @@
         text-decoration:none;
         color:green;
     }
-    .navPractice1{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navPractice2{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
+
+
     .navVon{
         margin-right:1%;
         text-decoration:none;
         color:green;
     }
-    .navPractice3{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
+
     .navVbind{
         margin-right:1%;
         text-decoration:none;
         color:green;
     }
-    .navPractice4{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
     .navVifAndVshow{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navPractice5{
         margin-right:1%;
         text-decoration:none;
         color:green;

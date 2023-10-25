@@ -23,36 +23,19 @@ const router = createRouter({
       name:'Vfor',
       component: () => import('../views/Vfor.vue')
     },
-    {
-      path:'/practice1',
-      name:'practice1',
-      component: () => import('../views/practice1.vue')
-    },
-    {
-      path:'/practice2',
-      name:'practice2',
-      component: () => import('../views/practice2.vue')
-    },
+  
     {
       path:'/Von',
       name:'Von',
       component: () =>import('../views/Von.vue')
     },
-    {
-      path:'/practice3',
-      name:'practice3',
-      component: () => import('../views/practice3.vue')
-    },
+  
     {
       path:'/Vbind',
       name:'Vbind',
       component: () => import('../views/Vbind.vue')
     },
-    {
-      path:'/practice4',
-      name:'practice4',
-      component: () => import('../views/practice4.vue')
-    },
+  
     {
       path:'/VifAndVshow',
       name:'VifAndVshow',

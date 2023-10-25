@@ -1,228 +1,288 @@
 <script>
+import travel from '../components/travel.vue';
+import cssPractice1 from '../views/practice1.vue';
+import cssPractice2 from '../views/practice2.vue';
+import cssPractice3 from '../views/practice3.vue';
+import cssPractice4 from '../views/practice4.vue';
+import cssPractice5 from '../views/practice5.vue';
+export default {
+    data(){
+        return{
+            controlPage:false,
+            controlTravelPage:false,
+            controlCssPractice1:false,
+            controlCssPractice2:false,
+            controlCssPractice3:false,
+            controlCssPractice4:false,
+            controlCssPractice5:false,
+        }
+    },
+
+    components:{
+        travel,
+        cssPractice1,
+        cssPractice2,
+        cssPractice3,
+        cssPractice4,
+        cssPractice5,
+    },
+
+    methods:{
+        turnToTravel(){
+            this.controlTravelPage = !this.controlTravelPage
+        },
+        turnToCssPractice1(){
+            this.controlCssPractice1 = !this.controlCssPractice1
+        },
+        turnToCssPractice2(){
+            this.controlCssPractice2 = !this.controlCssPractice2
+        },
+        turnToCssPractice3(){
+            this.controlCssPractice3 = !this.controlCssPractice3
+        },
+        turnToCssPractice4(){
+            this.controlCssPractice4 = !this.controlCssPractice4
+        },
+        turnToCssPractice5(){
+            this.controlCssPractice5 = !this.controlCssPractice5
+        },
+    }
 
 
+
+}
 
 </script>
 
 
 
-
 <template>
-<div class="header">
-        <div class="headerLeft">
-            <p class="headerTitle">GoGoplay</p>
-            <nav class="leftNavbar">
-                <p>首頁</p>
-                <p>最新活動</p>
-                <p>景點快報</p>
-                <p>折扣碼優惠</p>
-            </nav>
-        </div>
-
-        <div class="headerRight">
-            <p>下載App</p>
-            <p>繁體中文</p>
-            <input type="text" placeholder="搜尋">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <div class="headerUser">
-                <i class="fa-solid fa-user"></i>
-                <p>登入｜註冊</p>
-            </div>
+<div class="theme" v-if="controlPage == false">
+    <div class="travelSort">
+        <div class="travelImg" @click="turnToTravel"></div>
+        <div class="travelText">
+            <p>旅遊網站</p>
         </div>
     </div>
 
-    <div class="contentImg"></div>
-    <div class="content">
-        <div class="contentNavbar">
-            <nav>
-                <p>推薦</p>
-                <p>景點</p>
-                <p>活動</p>
-                <p>放鬆</p>
-                <p>戶外</p>
-                <p>交通</p>
-                <p>美食</p>
-            </nav>
-        </div>
-
-        <div class="contentCard">
-
-            <div class="card" style="width: 18rem;">
-                <img src="../../public/煙火.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">台北101煙火</h5>
-                <p class="card-text">門票價588</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../../public/煙火.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">台北101煙火</h5>
-                <p class="card-text">門票價588</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../../public/煙火.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">台北101煙火</h5>
-                <p class="card-text">門票價588</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../../public/煙火.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">台北101煙火</h5>
-                <p class="card-text">門票價588</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="opacityImg">
-            <p>住宿推薦</p>
+    <div class="cssPractice1Sort">
+        <div class="cssPractice1Img" @click="turnToCssPractice1"></div>
+        <div class="cssPractice1Text">
+            <p>切版練習1</p>
         </div>
     </div>
+
+    <div class="cssPractice2Sort">
+        <div class="cssPractice2Img" @click="turnToCssPractice2"></div>
+        <div class="cssPractice2Text">
+            <p>切版練習2</p>
+        </div>
+    </div>
+    <div class="cssPractice3Sort">
+        <div class="cssPractice3Img" @click="turnToCssPractice3"></div>
+        <div class="cssPractice3Text">
+            <p>甜點切版</p>
+        </div>
+    </div>
+    <div class="cssPractice4Sort">
+        <div class="cssPractice4Img" @click="turnToCssPractice4"></div>
+        <div class="cssPractice4Text">
+            <p>瀑布流</p>
+        </div>
+    </div>
+    <div class="cssPractice5Sort">
+        <div class="cssPractice5Img" @click="turnToCssPractice5"></div>
+        <div class="cssPractice5Text">
+            <p>房地產</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="travelPage">
+    
+    <travel v-if="controlTravelPage == true"/>
+</div>
+<div class="cssPractice1Page">
+    
+    <cssPractice1 v-if="controlCssPractice1 == true"/>
+</div>
+<div class="cssPractice2Page">
+    
+    <cssPractice2 v-if="controlCssPractice2 == true"/>
+</div>
+<div class="cssPractice3Page">
+    
+    <cssPractice3 v-if="controlCssPractice3 == true"/>
+</div>
+<div class="cssPractice4Page">
+    
+    <cssPractice4 v-if="controlCssPractice4 == true"/>
+</div>
+<div class="cssPractice5Page">
+    
+    <cssPractice5 v-if="controlCssPractice5 == true"/>
+</div>
+
+
 
 </template>
 
 
 
 <style lang="scss" scoped>
-.header{
-    width:100vw;
-    height:10vh;
-    background-color:black;
-    display:flex;
-    justify-content:space-between;
+.theme{
+    width:100%;
+    height:100%;
+    border:2px solid black;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    background-color:lightcoral;
 
-    .headerLeft{
-        width:30vw;
-        height:100%;
-        color:white;
-        display:flex;
+    .travelSort{
         
-        
-        .headerTitle{
-            font-size:26pt;
-            margin-top:4%;
-            
-        }
-        .leftNavbar{
-            width:15vw;
-            display:flex;
-            justify-content:space-around;
-            font-size:20px;
-            margin-left:5%;
-            margin-top:6%;
-            
-        }
-    }
-
-    .headerRight{
-        width:30vw;
-        height:100%;
-        color:white;
-        display:flex;
-        align-items: center;
-        
-
-        p{
-            margin-left:1%;
-            font-size:16pt;
-            margin-top:2%;
-        }
-
-        input{
-            margin-top:0.5%;
-            margin-left:2%;
-        }
-
-        i{
-            margin-left:2%;
-        }
-
-        .headerUser{
-            width:10vw;
-            margin-left:5%;
-            display:flex;
-            
-
-            i{
-                margin-top:10%;
-                margin-right:5%;
-            }
-
-            p{
-                margin-left:3%;
-                margin-top:7%;
-            }
-        }
-
-    }
-}
-
-.contentImg{
-    border:1px solid black;
-    width:100vw;
-    height:100vh;
-    background-image: url(../../public/風景圖.avif);
-}
-
-.content{
-    width:100vw;
-    background-color:aqua;
-    .contentNavbar{
-        width:90vw;
-        height:10vh;
-        margin:0 5vh;
-        border:1px solid black;
-        background-color:darkblue;
-        
-
-        nav{
-            width:100%;
-            height:100%;
-            display:flex;
-            justify-content:space-around;
-            font-size:26pt;
-            color:white;
-            border:1px solid white;
-            align-items: center;
-            
-        }
-    }
-
-    .contentCard{
-        width:80vw;
-        margin:0 10vw;
-        display:flex;
-        justify-content:space-around;
-
-        .card{
-            margin-top:3%;
-        }
-    }
-
-    .opacityImg{
-        width:80vw;
-        height:40vh;
-        margin:0 10vw;
-        background-image: url(../../public/房間.avif);
-        background-size:cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
         margin-top:3%;
-        opacity:0.7;
+        width:30vw;
+        height:40vh;
+       
 
-        p{
+        .travelText{
+            margin-top:2%;
+            width:15.5vw;
             
-            font-size:50pt;
+            color:blue;
             text-align:center;
-            color:white;
+        }
+
+        .travelImg{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/熱氣球.avif);
+        cursor: pointer;
         }
     }
-}</style>
+    .cssPractice1Sort{
+        
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
+
+        .cssPractice1Text{
+            margin-top:2%;
+            width:15.5vw;
+            
+            color:blue;
+            text-align:center;
+        }
+
+        .cssPractice1Img{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/2.png);
+        cursor: pointer;
+        }
+    }
+    .cssPractice2Sort{
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
+
+        .cssPractice2Text{
+            margin-top:2%;
+            width:15.5vw;
+            
+            color:blue;
+            text-align:center;
+        }
+
+        .cssPractice2Img{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/3.png);
+        cursor: pointer;
+        }
+    }
+    .cssPractice3Sort{
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
+
+        .cssPractice3Text{
+            margin-top:2%;
+            width:15.5vw;
+            color:blue;
+            text-align:center;
+        }
+
+        .cssPractice3Img{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/4.png);
+        cursor: pointer;
+        }
+    }
+    .cssPractice4Sort{
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
+
+        .cssPractice4Text{
+            margin-top:2%;
+            width:15.5vw;
+            color:blue;
+            text-align:center;
+        }
+
+        .cssPractice4Img{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/3.png);
+        cursor: pointer;
+        }
+    }
+    .cssPractice5Sort{
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
+
+        .cssPractice5Text{
+            margin-top:2%;
+            width:15.5vw;
+            color:blue;
+            text-align:center;
+        }
+
+        .cssPractice5Img{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/2.png);
+        cursor: pointer;
+        }
+    }
+}
+
+</style>
