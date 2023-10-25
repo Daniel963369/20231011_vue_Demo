@@ -20,20 +20,9 @@
 
 <template>
     <nav class="topNav">
-        <RouterLink class="navHome" to="/">Home</RouterLink>
-        <RouterLink class="navtextAndVModel" to="/VtextAndVModel">V-text & V-Model</RouterLink>
-        <RouterLink class="navVfor" to="/Vfor">V-for</RouterLink>
-        <RouterLink class="navVon" to="/Von">V-on</RouterLink>
-        <RouterLink class="navVbind" to="/Vbind">v-bind</RouterLink>
-        <RouterLink class="navVifAndVshow" to="/VifAndVshow">VifAndVshow</RouterLink>
-        <RouterLink class="navProps" to="/props">props</RouterLink>
-        <RouterLink class="navPropsSign" to="/propsSign">propsSign</RouterLink>
-        <RouterLink class="navEmit" to="/Emit">Emit</RouterLink>
-        <RouterLink class="navaccountLogin" to="/accountLogin">accountLogin</RouterLink>
-        <RouterLink class="navdataflow" to="/dataflow">dataflow</RouterLink>
-        <RouterLink class="navprovideAndInject" to="/provideAndInject">provideAndInject</RouterLink>
-        <RouterLink class="navWatchAndComputed" to="/WatchAndComputed">WatchAndComputed</RouterLink>
-        <RouterLink class="navbar" to="/HTMLANDCSS">HTML&CSS</RouterLink>
+        <RouterLink class="navHome" to="/">首頁</RouterLink>
+        <RouterLink class="navbar" to="/HTMLANDCSS">HTML&CSS&JS&Vue作品</RouterLink>
+        <RouterLink class="navbar" to="/vueNote">vue筆記</RouterLink>
         <p>{{ location }}</p>
         
         
@@ -60,70 +49,6 @@
         color:green;
     }
 
-    .navtextAndVModel{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-
-    .navVfor{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-
-
-    .navVon{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-
-    .navVbind{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navVifAndVshow{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navProps{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navPropsSign{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navEmit{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navaccountLogin{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navdataflow{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navprovideAndInject{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
-    .navWatchAndComputed{
-        margin-right:1%;
-        text-decoration:none;
-        color:green;
-    }
     .navbar{
         margin-right:1%;
         text-decoration:none;

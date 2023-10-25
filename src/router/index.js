@@ -10,38 +10,10 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-    {
-      path: '/VtextAndVmodel',
-      name: 'VtextAndVmodel',
+
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/VtextAndVmodel.vue')
-    },
-    {
-      path:'/Vfor',
-      name:'Vfor',
-      component: () => import('../views/Vfor.vue')
-    },
-  
-    {
-      path:'/Von',
-      name:'Von',
-      component: () =>import('../views/Von.vue')
-    },
-  
-    {
-      path:'/Vbind',
-      name:'Vbind',
-      component: () => import('../views/Vbind.vue')
-    },
-  
-    {
-      path:'/VifAndVshow',
-      name:'VifAndVshow',
-      component: () => import('../views/VifAndVshow.vue')
-    },
-
     {
       path:'/practice5',
       name:'practice5',
@@ -74,19 +46,9 @@ const router = createRouter({
     ]
     },
     {
-      path:'/props',
-      name:'props',
-      component: () => import('../views/props.vue'),
-    },
-    {
       path:'/propsSign',
       name:'propsSign',
       component: () =>import('../views/propsSign.vue'),
-    },
-    {
-      path:'/Emit',
-      name:'Emit',
-      component: () =>import('../views/Emit.vue'),
     },
     {
       path:'/accountLogin',
@@ -104,19 +66,14 @@ const router = createRouter({
       component: () =>import('../views/dataflow.vue'),
     },
     {
-      path:'/provideAndInject',
-      name:'provideAndInject',
-      component: () =>import('../views/provideAndInject.vue'),
-    },
-    {
-      path:'/WatchAndComputed',
-      name:'WatchAndComputed',
-      component: () =>import('../views/WatchAndComputed.vue'),
-    },
-    {
       path:'/HTMLANDCSS',
       name:'HTMLANDCSS',
       component: () =>import('../views/HTMLANDCSS.vue'),
+    },
+    {
+      path:'/vueNote',
+      name:'vueNote',
+      component: () =>import('../views/vueNote.vue'),
     },
   ]
 })

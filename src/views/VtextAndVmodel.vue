@@ -39,16 +39,20 @@ method:{
 <template>
     <div class="body">
         <h1>V-text and V-model</h1>
+        <br>
+        <p>印出return內的物件</p>
         <p class="templateInfo">{{ this.info }}</p>
-        
-        <test class="templateTest" v-text="info" />
 
+        <p>v-text的運用</p>
+        <test class="templateTest" v-text="info" />
+        <p>v-model的運用</p>
         <div class="test1">
             <input type="text" v-model="cool">
             <h4>{{ this.cool }}</h4>
             <input type="number" v-model="age">
             <h4>{{ '年齡:'+this.age }}</h4>
         </div>
+        <p>v-model結合選單的應用</p>
         <div class="test2">
             <select name="" id="" v-model="selectText">
                 <option value="1">1</option>
@@ -58,7 +62,7 @@ method:{
             </select>
             <h4>{{ selectText }}</h4>
         </div>
-        
+        <p>v-model(lazy、number以及trim)</p>
         <div class="test3">
         <input type="text" v-model.lazy="lazyText">
             <p>{{ this.lazyText }}</p>
@@ -67,7 +71,7 @@ method:{
             <input type="text" v-model.trim="trimText">
             <p>{{ this.trimText }}</p>
         </div>
-
+        <p>v-model在checkbox的應用</p>
         <div class="test4">
         <label for="">早餐</label>
         <input type="checkbox" v-model="checkboxText" name="meal" value="breakfast" id="breakfast">
@@ -85,7 +89,7 @@ method:{
         <input type="radio" v-model="radioText" name="food" value="fish">
         <p>{{ this.radioText }}</p>
     </div>
-
+    <p>v-model結合陣列在radio的應用</p>
     <div class="test5">
         <label for="">究極天使獸</label>
         <input type="radio" value="https://digimon.net/cimages/digimon/seraphimon.jpg" v-model="imgArr">
@@ -114,6 +118,10 @@ method:{
     width:100vw;
     justify-content: center;
     align-items:center;
+    text-align:center;
+    p{
+        font-size:20pt;
+    }
 
     h1{
         text-align:center;

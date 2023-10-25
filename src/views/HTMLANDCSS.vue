@@ -1,5 +1,8 @@
 <script>
 import travel from '../components/travel.vue';
+import propsSign from './propsSign.vue';
+import accountLogin from './accountLogin.vue';
+import dataflow from './dataflow.vue';
 import cssPractice1 from '../views/practice1.vue';
 import cssPractice2 from '../views/practice2.vue';
 import cssPractice3 from '../views/practice3.vue';
@@ -9,7 +12,10 @@ export default {
     data(){
         return{
             controlPage:false,
+            controlPropsSign:false,
             controlTravelPage:false,
+            controlaccountLogin:false,
+            controlDataflow:false,
             controlCssPractice1:false,
             controlCssPractice2:false,
             controlCssPractice3:false,
@@ -20,6 +26,9 @@ export default {
 
     components:{
         travel,
+        propsSign,
+        accountLogin,
+        dataflow,
         cssPractice1,
         cssPractice2,
         cssPractice3,
@@ -32,6 +41,19 @@ export default {
             this.controlTravelPage = !this.controlTravelPage
             this.controlPage = !this.controlPage
         },
+        turnToPropsSign(){
+            this.controlPropsSign = !this.controlPropsSign
+            this.controlPage = !this.controlPage
+        },
+        turnToAccountLogin(){
+            this.controlaccountLogin = !this.controlaccountLogin
+            this.controlPage = !this.controlPage
+        },
+        turnToDataflow(){
+            this.controlDataflow = !this.controlDataflow
+            this.controlPage = !this.controlPage
+        },
+        
         turnToCssPractice1(){
             this.controlCssPractice1 = !this.controlCssPractice1
             this.controlPage = !this.controlPage
@@ -102,12 +124,42 @@ export default {
             <p>房地產</p>
         </div>
     </div>
+    <div class="propsSignSort">
+        <div class="propsSignImg" @click="turnToPropsSign"></div>
+        <div class="propsSignText">
+            <p>登陸註冊系統</p>
+        </div>
+    </div>
+    <div class="accountLoginSort">
+        <div class="accountLoginImg" @click="turnToAccountLogin"></div>
+        <div class="accountLoginText">
+            <p>記帳系統</p>
+        </div>
+    </div>
+    <div class="dataflowSort">
+        <div class="dataflowImg" @click="turnToDataflow"></div>
+        <div class="dataflowText">
+            <p>資料傳輸</p>
+        </div>
+    </div>
 </div>
 
 
 <div class="travelPage">
     
     <travel v-if="controlTravelPage == true"/>
+</div>
+<div class="propsSignPage">
+    
+    <propsSign v-if="controlPropsSign == true"/>
+</div>
+<div class="accountLoginPage">
+    
+    <accountLogin v-if="controlaccountLogin == true"/>
+</div>
+<div class="dataflowPage">
+    
+    <dataflow v-if="controlDataflow == true"/>
 </div>
 <div class="cssPractice1Page">
     
@@ -151,7 +203,7 @@ export default {
         margin-top:3%;
         width:30vw;
         height:40vh;
-       
+    
 
         .travelText{
             margin-top:2%;
@@ -289,6 +341,76 @@ export default {
         cursor: pointer;
         }
     }
+    .propsSignSort{
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
+
+        .propsSignText{
+            margin-top:2%;
+            width:15.5vw;
+            color:blue;
+            text-align:center;
+        }
+
+        .propsSignImg{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/2.png);
+        cursor: pointer;
+        }
+    }
+    .accountLoginSort{
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
+
+        .accountLoginText{
+            margin-top:2%;
+            width:15.5vw;
+            color:blue;
+            text-align:center;
+        }
+
+        .accountLoginImg{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/3.png);
+        cursor: pointer;
+        }
+    }
+}
+    .dataflowSort{
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
+
+        .dataflowText{
+            margin-top:2%;
+            width:15.5vw;
+            color:blue;
+            text-align:center;
+        }
+
+        .dataflowImg{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/4.png);
+        cursor: pointer;
+        }
+    
 }
 
 </style>
