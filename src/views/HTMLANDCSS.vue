@@ -92,56 +92,61 @@ export default {
             <p>旅遊網站</p>
         </div>
     </div>
+        <div class="cssPractice1Sort">
+            <div class="cssPractice1Img" @click="turnToCssPractice1"></div>
+            <div class="cssPractice1Text">
+                <p>切版練習1</p>
+            </div>
+        </div>
 
-    <div class="cssPractice1Sort">
-        <div class="cssPractice1Img" @click="turnToCssPractice1"></div>
-        <div class="cssPractice1Text">
-            <p>切版練習1</p>
+        <div class="cssPractice2Sort">
+            <div class="cssPractice2Img" @click="turnToCssPractice2"></div>
+            <div class="cssPractice2Text">
+                <p>切版練習2</p>
+            </div>
         </div>
-    </div>
+    
 
-    <div class="cssPractice2Sort">
-        <div class="cssPractice2Img" @click="turnToCssPractice2"></div>
-        <div class="cssPractice2Text">
-            <p>切版練習2</p>
+    
+        <div class="cssPractice3Sort">
+            <div class="cssPractice3Img" @click="turnToCssPractice3"></div>
+            <div class="cssPractice3Text">
+                <p>甜點切版</p>
+            </div>
         </div>
-    </div>
-    <div class="cssPractice3Sort">
-        <div class="cssPractice3Img" @click="turnToCssPractice3"></div>
-        <div class="cssPractice3Text">
-            <p>甜點切版</p>
+        <div class="cssPractice4Sort">
+            <div class="cssPractice4Img" @click="turnToCssPractice4"></div>
+            <div class="cssPractice4Text">
+                <p>瀑布流</p>
+            </div>
         </div>
-    </div>
-    <div class="cssPractice4Sort">
-        <div class="cssPractice4Img" @click="turnToCssPractice4"></div>
-        <div class="cssPractice4Text">
-            <p>瀑布流</p>
+        <div class="cssPractice5Sort">
+            <div class="cssPractice5Img" @click="turnToCssPractice5"></div>
+            <div class="cssPractice5Text">
+                <p>房地產</p>
+            </div>
         </div>
-    </div>
-    <div class="cssPractice5Sort">
-        <div class="cssPractice5Img" @click="turnToCssPractice5"></div>
-        <div class="cssPractice5Text">
-            <p>房地產</p>
+    
+
+
+        <div class="propsSignSort">
+            <div class="propsSignImg" @click="turnToPropsSign"></div>
+            <div class="propsSignText">
+                <p>登陸註冊系統</p>
+            </div>
         </div>
-    </div>
-    <div class="propsSignSort">
-        <div class="propsSignImg" @click="turnToPropsSign"></div>
-        <div class="propsSignText">
-            <p>登陸註冊系統</p>
+        <div class="accountLoginSort">
+            <div class="accountLoginImg" @click="turnToAccountLogin"></div>
+            <div class="accountLoginText">
+                <p>記帳系統</p>
+            </div>
         </div>
-    </div>
-    <div class="accountLoginSort">
-        <div class="accountLoginImg" @click="turnToAccountLogin"></div>
-        <div class="accountLoginText">
-            <p>記帳系統</p>
+        <div class="dataflowSort">
+            <div class="dataflowImg" @click="turnToDataflow"></div>
+            <div class="dataflowText">
+                <p>資料傳輸</p>
+            </div>
         </div>
-    </div>
-    <div class="dataflowSort">
-        <div class="dataflowImg" @click="turnToDataflow"></div>
-        <div class="dataflowText">
-            <p>資料傳輸</p>
-        </div>
-    </div>
 </div>
 
 
@@ -198,8 +203,10 @@ export default {
     justify-content:space-around;
     background-color:lightcoral;
 
+
+    
+
     .travelSort{
-        
         margin-top:3%;
         width:30vw;
         height:40vh;

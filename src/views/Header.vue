@@ -23,7 +23,6 @@
         <RouterLink class="navbar" to="/">首頁</RouterLink>
         <RouterLink class="navbar" to="/HTMLANDCSS">HTML&CSS&JS&Vue作品</RouterLink>
         <RouterLink class="navbar" to="/vueNote">vue筆記</RouterLink>
-        <p>{{ location }}</p>
     </nav>
 </template>
 
