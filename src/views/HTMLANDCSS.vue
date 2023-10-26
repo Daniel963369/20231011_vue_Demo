@@ -1,5 +1,6 @@
 <script>
 import travel from '../components/travel.vue';
+import portfolioteach from './portfolioteach.vue';
 import propsSign from './propsSign.vue';
 import accountLogin from './accountLogin.vue';
 import dataflow from './dataflow.vue';
@@ -21,11 +22,13 @@ export default {
             controlCssPractice3:false,
             controlCssPractice4:false,
             controlCssPractice5:false,
+            controlPortfolioTeach:false,
         }
     },
 
     components:{
         travel,
+        portfolioteach,
         propsSign,
         accountLogin,
         dataflow,
@@ -51,6 +54,10 @@ export default {
         },
         turnToDataflow(){
             this.controlDataflow = !this.controlDataflow
+            this.controlPage = !this.controlPage
+        },
+        turnToPortfolioTeach(){
+            this.controlPortfolioTeach = !this.controlPortfolioTeach
             this.controlPage = !this.controlPage
         },
         
@@ -147,6 +154,12 @@ export default {
                 <p>資料傳輸</p>
             </div>
         </div>
+        <div class="portfolioTeachSort">
+            <div class="portfolioTeachImg" @click="turnToPortfolioTeach"></div>
+            <div class="portfolioTeachText">
+                <p>教學網站</p>
+            </div>
+        </div>
 </div>
 
 
@@ -165,6 +178,10 @@ export default {
 <div class="dataflowPage">
     
     <dataflow v-if="controlDataflow == true"/>
+</div>
+<div class="portfolioTeachPage">
+    
+    <portfolioteach v-if="controlPortfolioTeach == true"/>
 </div>
 <div class="cssPractice1Page">
     
@@ -417,7 +434,28 @@ export default {
         background-image: url(../../public/甜點圖片/4.png);
         cursor: pointer;
         }
-    
-}
+    }
+    .portfolioTeachSort{
+        margin-top:3%;
+        width:30vw;
+        height:40vh;
+       
 
+        .portfolioTeachText{
+            margin-top:2%;
+            width:15.5vw;
+            color:blue;
+            text-align:center;
+        }
+
+        .portfolioTeachImg{
+        margin-left:5%;
+        width:12vw;
+        height:30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../public/甜點圖片/4.png);
+        cursor: pointer;
+        }
+    }
 </style>
