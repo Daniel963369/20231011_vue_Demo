@@ -20,7 +20,13 @@ export default {
             description:"html、css與javascript結合"
           }
       ],
-
+      
+      imgArr:[
+        "../../public/動畫圖1.avif",
+        "../../public/動畫圖2.avif",
+        "../../public/動畫圖3.avif",
+        
+      ]
     }
   }
 }
@@ -96,6 +102,30 @@ export default {
     <div class="learningImg4"></div>
 </div>
 
+<div class="articleShare" >
+  <h1>文章分享</h1>
+  <div class="articleShareImg" v-for="item in imgArr">
+    <img :src="item" alt="">
+  </div>
+</div>
+
+<div class="uniqueVision">
+  <div class="uvText">
+    <p>打造專屬於你的網頁</p>
+    <p>得到程式超能力</p>
+  </div>
+  <div class="uvImg">
+    <img src="../../public/願景圖-1.avif" alt="">
+    <div class="rectangle">
+      <p>要比每天更進步</p>
+    </div>
+    <div class="circle"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Coding by Daniel Θ All Right Reserved</p>
+</div>
 </template>
 
 
@@ -342,5 +372,105 @@ export default {
         }
     }
 }
+
+.articleShare{
+  display:flex;
+  width:100vw;
+  justify-content:space-around;
+  background-color:gray;
+  position:relative;
+  
+  h1{
+    position:absolute;
+    color:white;
+    top:15%;
+    left:45%;
+  }
+  
+  .articleShareImg{
+    margin-top:10%;
+    display:flex;
+    justify-content:space-around;
+    cursor: pointer;
+  img{
+    width:30vw;
+    justify-content:space-around;
+    border:1px solid white;
+    
+  }
+  p{
+    font-size:18pt;
+    color:lightgreen;
+    border:1px solid white;
+    
+  }
+  }
+}
+
+.uniqueVision{
+  width:100vw;
+  background-color:black;
+  position:relative;
+  
+  .uvText{
+    font-size:20pt;
+    color:white;
+    text-align:center;
+  }
+
+  .uvImg{
+    display:flex;
+    img{
+    width:30vw;
+    height:50vh;
+    border:1px solid white;
+    margin-left:25%;
+    margin-top:5%;
+    z-index:1;
+    }
+    .rectangle{
+      width:30vw;
+      height:15vh;
+      background-color:white;
+      position:absolute;
+      left:50%;
+      top:70%;
+      z-index:2;
+      border-radius:20px;
+
+      p{
+        margin-left:3%;
+        margin-top:7%;
+        font-weight:bold;
+      }
+    }
+
+    .circle{
+      background-color:white;
+      width:80px;
+      height:80px;
+      border-radius:99em;
+      background-image: url(../../public/winter.jpg);
+      background-size:contain;
+      position:absolute;
+      top:60%;
+      left:75%;
+      z-index:3;
+    }
+  }
+}
+
+.footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  width:100vw;
+  height:10vh;
+  background-color:gray;
+}
+
+
+
 
 </style>
