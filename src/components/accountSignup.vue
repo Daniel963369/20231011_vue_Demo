@@ -24,6 +24,9 @@ export default {
             this.get=JSON.parse(localStorage.getItem("user"))
             console.log(this.get)
             alert("創建成功")
+            let turnToLogin = 1
+            this.$emit("chanpage",turnToLogin)
+            
         },
 
         cancelBtn(){
