@@ -4,17 +4,7 @@
     export default {
       data(){
         return{
-            personalInformation:{
-              name:"鄭展舜",
-              educationalBackground:"屏東大學教育學系",
-              zodiac:"巨蟹座",
-              blood:"A型"
-            },
-            connectionMethod:{
-              cellphone:"09xx-xxx-xxx",
-              Email:"xxxx@gmail.com",
-              adress:"xx鄉xx里xx村",
-            }
+
         }
       },
       components: {
@@ -29,68 +19,35 @@
   <div class="headerShow">
     <h1>展舜の家</h1>
     <div class="headerNav">
-      <p>Tainan｜</p>
-      <p>Abroad｜</p>
-      <p>Lifestyle｜</p>
-      <p>Sharing｜</p>
-      <p>Other｜</p>
-      <p>Search｜</p>
+      <a href="">Tainan｜</a> 
+      <a href="">Abroad｜</a>
+      <a href="">Lifestyle｜</a>
+      <a href="">Sharing｜</a>
+      <a href="">Other｜</a>
+      <a href="">Search｜</a>
     </div>
     <div class="introduction">
       <div class="introductionText">
-        <h2>自我介紹</h2>
-        <p>姓名:{{personalInformation.name}}</p>
-        <p>學歷:{{ personalInformation.educationalBackground }}</p>
-        <p>星座:{{ personalInformation.zodiac }}</p>
-        <p>血型:{{ personalInformation.blood }}</p>
+
       </div>
       <div class="introductionImg"></div>
     </div>
     
     <div class="connection">
-      <h2>聯絡方式</h2>
-      <p>電話:{{ connectionMethod.cellphone }}</p>
-      <p>Email:{{connectionMethod.Email}}</p>
-      <p>地址:{{ connectionMethod.adress }}</p>
+ 
     </div>
     <div class="interest"></div>
 
     <div class="skill">
-      <h2>專業技能</h2>
-      <p>html★★☆☆☆</p>
-      <p>css★★☆☆☆</p>
-      <p>javascript★★☆☆☆</p>
-      <p>vue★☆☆☆☆</p>
+  
     </div>
     <!-- <Header /> -->
   </div>
   <div class="showContent">
-    <div class="landscape">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../images/landscape1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../images/landscape2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../images/landscape3.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div> 
+ 
 
   <div class="aboutMe">
-    <p>關於我</p>
+    
   </div>
   
     <RouterView />
@@ -111,6 +68,17 @@
       color:blue;
       font-size:50px;
       background-color: papayawhip;
+      animation-name:titleChange;
+      animation-duration:2s;
+      animation-iteration-count:infinite;
+
+      @keyframes titleChange {
+        
+        0%  {background-color:green;}
+        25% {background-color:lawngreen; font-size:26pt;}
+        50% {background-color:lightgreen; font-size:30pt;}
+        
+      }
     }
 
     .headerNav{
@@ -118,9 +86,10 @@
       justify-content: center;
       background-color:rgb(205, 197, 197);
       color:white;
-      p{
+      a{
         font-size:26px;
         margin-top:1%;
+        text-decoration:none;
       }
     }
 
@@ -143,7 +112,6 @@
           width:50%;
           height:100%;
           border:1px solid black;
-          background-image:url(../Picture/Heaerphoto.png);
           background-size: contain;
           background-repeat:no-repeat;
           background-color: beige;
@@ -151,11 +119,17 @@
     }
 
     .connection{
+        width:50vw;
         border:1px solid black;
         font-size:24pt;
         text-align:center;
         background-color: beige;
         color:black;
+
+        video{
+          width:50vw;
+          border:1px solid black;
+        }
     }
 
     .skill{
