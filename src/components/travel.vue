@@ -60,7 +60,7 @@ export default {
             <div class="contentCard">
 
                 <div class="card" style="width: 18rem;">
-                    <img src="../../public/煙火.avif" class="card-img-top" alt="...">
+                    <img src="../../public/images/煙火.avif" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">台北101煙火</h5>
                     <p class="card-text">門票價588</p>
@@ -68,7 +68,7 @@ export default {
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="../../public/煙火.avif" class="card-img-top" alt="...">
+                    <img src="../../public/images/煙火.avif" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">台北101煙火</h5>
                     <p class="card-text">門票價588</p>
@@ -76,7 +76,7 @@ export default {
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="../../public/煙火.avif" class="card-img-top" alt="...">
+                    <img src="../../public/images/煙火.avif" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">台北101煙火</h5>
                     <p class="card-text">門票價588</p>
@@ -84,7 +84,7 @@ export default {
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="../../public/煙火.avif" class="card-img-top" alt="...">
+                    <img src="../../public/images/煙火.avif" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">台北101煙火</h5>
                     <p class="card-text">門票價588</p>
@@ -181,7 +181,7 @@ export default {
     border:1px solid black;
     width:100vw;
     height:100vh;
-    background-image: url(../../public/風景圖.avif);
+    background-image: url(../../public/images/風景圖.avif);
 }
 
 .content{
@@ -223,7 +223,7 @@ export default {
         width:80vw;
         height:40vh;
         margin:0 10vw;
-        background-image: url(../../public/房間.avif);
+        background-image: url(../../public/images/房間.avif);
         background-size:cover;
         background-attachment: fixed;
         background-repeat: no-repeat;

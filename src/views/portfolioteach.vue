@@ -115,7 +115,7 @@ export default {
     <p>得到程式超能力</p>
   </div>
   <div class="uvImg">
-    <img src="../../public/願景圖-1.avif" alt="">
+    <img src="../../public/images/願景圖-1.avif" alt="">
     <div class="rectangle">
       <p>要比每天更進步</p>
     </div>
@@ -194,7 +194,7 @@ export default {
 .secondContent{
   width:100vw;
   height:90vh;
-  background-image: url(../../public/投影圖1.avif);
+  background-image: url(../../public/images/投影圖1.avif);
   background-size:cover;
   position:relative;
   z-index:1;
@@ -331,7 +331,7 @@ export default {
         margin-top:5%;
         width:25%;
         height:50vh;
-        background-image: url(../../public/學習圖-1.avif);
+        background-image: url(../../public/images/學習圖-1.avif);
         background-size:cover;
 
         &:hover{
@@ -342,7 +342,7 @@ export default {
         margin-top:5%;
         width:25%;
         height:50vh;
-        background-image: url(../../public/學習圖-2.avif);
+        background-image: url(../../public/images/學習圖-2.avif);
         background-size:cover;
 
         &:hover{
@@ -353,7 +353,7 @@ export default {
         margin-top:5%;
         width:25%;
         height:50vh;
-        background-image: url(../../public/學習圖-3.avif);
+        background-image: url(../../public/images/學習圖-3.avif);
         background-size:cover;
 
         &:hover{
@@ -364,7 +364,7 @@ export default {
         margin-top:5%;
         width:25%;
         height:50vh;
-        background-image: url(../../public/學習圖-4.avif);
+        background-image: url(../../public/images/學習圖-4.avif);
         background-size:cover;
 
         &:hover{
@@ -450,7 +450,7 @@ export default {
       width:80px;
       height:80px;
       border-radius:99em;
-      background-image: url(../../public/winter.jpg);
+      background-image: url(../../public/images/winter.jpg);
       background-size:contain;
       position:absolute;
       top:60%;

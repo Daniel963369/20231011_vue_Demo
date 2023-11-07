@@ -243,7 +243,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/熱氣球.avif);
+        background-image: url(../../public/images/熱氣球.avif);
         cursor: pointer;
         }
     }

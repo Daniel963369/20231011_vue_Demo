@@ -200,7 +200,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/v-logo-2.avif);
+        background-image: url(../../public/images/v-logo-2.avif);
         cursor: pointer;
         }
     }
@@ -226,7 +226,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/u-logo.avif);
+        background-image: url(../../public/images/u-logo.avif);
         cursor: pointer;
         }
     }
@@ -251,7 +251,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/e-logo.avif);
+        background-image: url(../../public/images/e-logo.avif);
         cursor: pointer;
         }
     }
@@ -276,7 +276,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/v-logo-2.avif);
+        background-image: url(../../public/images/v-logo-2.avif);
         cursor: pointer;
         }
     }
@@ -301,7 +301,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/u-logo.avif);
+        background-image: url(../../public/images/u-logo.avif);
         cursor: pointer;
         }
     }
@@ -326,7 +326,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/e-logo.avif);
+        background-image: url(../../public/images/e-logo.avif);
         cursor: pointer;
         }
     }
@@ -351,7 +351,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/v-logo-2.avif);
+        background-image: url(../../public/images/v-logo-2.avif);
         cursor: pointer;
         }
     }
@@ -376,7 +376,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/u-logo.avif);
+        background-image: url(../../public/images/u-logo.avif);
         cursor: pointer;
         }
     }
@@ -401,7 +401,7 @@ export default {
         height:30vh;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../../public/e-logo.avif);
+        background-image: url(../../public/images/e-logo.avif);
         cursor: pointer;
         }
     }
