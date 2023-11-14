@@ -67,6 +67,7 @@
       text-shadow:2px 3px 1px aqua;
       color:aqua;
       font-size:50px;
+      
       background-color: papayawhip;
       animation-name:titleChange;
       animation-duration:2s;
@@ -75,7 +76,7 @@
 
       @keyframes titleChange {
         
-        0%  {background-color:green;}
+        0%  {background-color:green; transform:rotate(360deg);}
         25% {background-color:lawngreen; font-size:26pt;}
         50% {background-color:lightgreen; font-size:30pt;}
         
